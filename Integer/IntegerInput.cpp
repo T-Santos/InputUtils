@@ -2,7 +2,9 @@
 
 bool isValidInt(const std::string&);
 int toInt(const std::string&);
-
+/*
+   This is the main function to call
+*/
 int getInt()
 {
     std::string strInt;
