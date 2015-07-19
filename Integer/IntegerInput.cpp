@@ -29,10 +29,20 @@ int getInt()
 
 bool isValidInt(const std::string& str)
 {
-    std::string::const_iterator it;
-    for (it = str.begin(); it != str.end(); ++it)
-        if(!isdigit(*it))
-            return false;
+    if (str.length() == 0)
+    {
+        return false;
+
+    }else
+    {
+        std::string::const_iterator it;
+        for (it = str.begin(); it != str.end(); ++it)
+        {
+            if(!isdigit(*it))
+                return false;
+        }
+
+    }
 
     return true;
 };
